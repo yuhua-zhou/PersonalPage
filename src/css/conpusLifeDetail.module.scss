@@ -1,0 +1,39 @@
+.container{
+  width: 96%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .top{
+
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p{
+      flex: 1;
+      width: 98%;
+      text-align: left;
+      text-indent: 2em;
+      font-size: 0.9em;
+    }
+
+    span{
+      width: 1px;
+      height: 120px;
+      margin: 0 10px;
+      background-color: #c8c8c8;
+    }
+  }
+
+  //活动图片
+  img{
+    width: 300px;
+  }
+  //活动名
+  .name{
+    font-size: 0.9em;
+  }
+}

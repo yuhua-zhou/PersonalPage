@@ -1,0 +1,30 @@
+.container{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+.top{
+  text-indent:2em;
+  font-size:0.9em;
+}
+.bottom{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  margin-top:10px;
+
+  a{
+    flex:1;
+    margin-top:5px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  img{
+    width:90%;
+    border-radius: 5px;
+  }
+}

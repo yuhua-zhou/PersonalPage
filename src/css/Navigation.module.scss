@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  border-bottom: #8b8b8b 1px solid;
+
+  .logo {
+    margin-left: 100px;
+    margin-right: 100px;
+    cursor: pointer;
+
+    .icon{
+      width: 43px;
+      height: 40px;
+    }
+
+    .name{
+      height: 37px;
+      margin-left: 10px;
+    }
+
+  }
+
+  .text{
+    padding: 0 5px;
+    font-family: "Adobe 黑体 Std R";
+  }
+
+  .line {
+    width: 0px;
+    height: 2px;
+    background-color: #4daee7;
+    position: absolute;
+    margin-top: 10px;
+
+    transition:width 300ms;
+    -moz-transition:width 300ms; /* Firefox 4 */
+    -webkit-transition:width 300ms; /* Safari and Chrome */
+    -o-transition:width 300ms; /* Opera */
+  }
+
+  .itemUnselet {
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1em;
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .itemUnselet:hover .line{
+    width: 100%;
+  }
+
+  .itemSelected {
+    cursor: pointer;
+    margin: 0 10px;
+    color: #4daee7;
+    position: relative;
+    text-decoration: none;
+    // 选中的直接有s
+    .line{
+      width: 100%;
+    }
+  }
+
+}

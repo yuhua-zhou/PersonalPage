@@ -1,0 +1,51 @@
+.container{
+  width:95%;
+  height:auto;
+  display:flex;
+  flex-direction:row;
+
+  .left{
+    width:40%;
+    display:flex;
+    flex-direction:row;
+    align-Items:center;
+
+    img{
+        height: 250px;
+        border-radius: 10px;
+    }
+  }
+
+  .right{
+    width:60%;
+    height:auto;
+
+    p{
+      margin:5px 20px 20px 20px;
+      font-size:0.9em;
+      text-indent: 2em;
+    }
+
+    .bottom{
+
+      display: flex;
+      flex-direction: row;
+
+      li{
+        margin:5px 20px 0px 20px;
+        font-size:0.9em;
+        list-style: none;
+        background: url("../img/medel.png");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 20px;
+      }
+
+      img{
+        height: 200px;
+        margin-left: 50px;
+      }
+
+    }
+  }
+}

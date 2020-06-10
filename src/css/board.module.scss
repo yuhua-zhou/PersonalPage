@@ -1,0 +1,141 @@
+.board{
+    //width: 80%;
+    width: 1050px;
+    height: 650px;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #c8c8c8;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/*头部背景*/
+.headBg{
+    width: 100%;
+    flex: 4;
+    background: url("../img/headBg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*底部*/
+.container{
+    width: 100%;
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+}
+
+/*容器左边*/
+.container .left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+.container .left .icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.myName{
+    margin-top: 5px;
+    font-weight: bold;
+}
+.myTag{
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: oblique;
+    color: #9b9b9b;
+    text-align: center;
+}
+.myDescribe{
+    font-size: 13px;
+    text-align: center;
+}
+.myDescribe p{
+    margin: 5px 0;
+    color: #515151;
+}
+.line{
+    width: 60%;
+    border-top: 1px #8a8a8a solid;
+    margin: 15px 0;
+}
+.container .left .row{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.container .left .row p{
+    font-size: 12px;
+    flex: 1;
+    text-align: center;
+    color: #9b9b9b;
+    margin: 0 25px;
+    cursor: pointer;
+    /*文字不会被选中*/
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+.container .left .row p:first-line{
+    font-size: 13px;
+    font-weight: bold;
+    color: #515151;
+}
+/*容器右边*/
+.container .right{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .right .body{
+    width: 90%;
+    height: 80%;
+}
+.container .right .body .title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container .right .body .title .item{
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container .right .body .title .itemSelect{
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px black solid;
+}
+.container .right .body .title .nothing{
+    flex: 1;
+}
+.container .right .body .title button{
+    width: 60px;
+    border: none;
+    background-color: #86b5ff;
+    color: #fff;
+    padding: 3px 0;
+    font-size: 13px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.container .right .body .title button:active{
+    background-color: #9cbdff;
+}
+.container .right .body .title button:focus{
+    outline: none;
+}

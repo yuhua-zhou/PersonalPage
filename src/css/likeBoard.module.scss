@@ -1,0 +1,26 @@
+.row{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+
+  p{
+    font-size: 12px;
+    flex: 1;
+    text-align: center;
+    color: #9b9b9b;
+    margin: 0 25px;
+    cursor: pointer;
+    /*文字不会被选中*/
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+  }
+  p:first-line{
+    font-size: 13px;
+    font-weight: bold;
+    color: #515151;
+  }
+
+}

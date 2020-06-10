@@ -1,0 +1,101 @@
+/*背景流星*/
+#stars{
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*z-index: 0;*/
+}
+.star {
+    display: block;
+    width: 1px;
+    background: transparent;
+    position: absolute;
+    opacity: 0;
+    /*过渡动画*/
+    animation: star-fall 3s linear infinite;
+    -webkit-animation: star-fall 3s linear infinite;
+    -moz-animation: star-fall 3s linear infinite;
+}
+
+.star:after {
+    content: '';
+    display: block;
+    border: 0px solid #fff;
+    border-width: 0px 90px 2px 90px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, .5);
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+    /*变形*/
+    transform: rotate(-45deg) translate3d(1px, 3px, 0);
+    -webkit-transform: rotate(-45deg) translate3d(1px, 3px, 0);
+    -moz-transform: rotate(-45deg) translate3d(1px, 3px, 0);
+    transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+}
+
+@keyframes star-fall {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translate3d(0, 0, 0);
+        -webkit-transform: scale(0.5) translate3d(0, 0, 0);
+        -moz-transform: scale(0.5) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate3d(-200px, 200px, 0);
+        -webkit-transform: translate3d(-200px, 200px, 0);
+        -moz-transform: translate3d(-200px, 200px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2) translate3d(-300px, 300px, 0);
+        -webkit-transform: scale(1.2) translate3d(-300px, 300px, 0);
+        -moz-transform: scale(1.2) translate3d(-300px, 300px, 0);
+    }
+}
+
+/*弹框动画*/
+.example-enter {
+    opacity: 0.01;
+}
+.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.example-leave {
+    opacity: 1;
+}
+.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+
+/*科研成果滑动*/
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 400ms;
+    transform: scale(0.85);
+    z-index:1;
+}
+.swiper-slide-active,.swiper-slide-duplicate-active{
+    transform: scale(1);
+    z-index: 2;
+}
