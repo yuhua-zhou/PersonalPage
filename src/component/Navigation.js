@@ -20,14 +20,23 @@ class Navigation extends React.Component {
         let result = [];
         for (let i = 0; i < this.state.items.length; i++) {
             result.push(
-                <NavLink className={this.state.index===i?style.itemSelected:style.itemUnselet}
+                <div className={this.state.index===i?style.itemSelected:style.itemUnselet}
                      onClick={this.switchIndex.bind(this,i)}
-                     to={this.state.items[i].url}>
+                >
                     <div className={style.text}>{this.state.items[i].name}</div>
                     <div className={style.line}></div>
-                </NavLink>
+                </div>
             );
         }
+
+        {/*<NavLink className={this.state.index===i?style.itemSelected:style.itemUnselet}*/}
+                 {/*onClick={this.switchIndex.bind(this,i)}*/}
+                 {/*to={this.state.items[i].url}*/}
+        {/*>*/}
+            {/*<div className={style.text}>{this.state.items[i].name}</div>*/}
+            {/*<div className={style.line}></div>*/}
+        {/*</NavLink>*/}
+
         return result;
     }
 

@@ -11,14 +11,18 @@ class App extends React.Component{
         return(
             <div>
                 <Navigation/>
-                <Router>
-                    {/*<Redirect path={"/"} to={"/HomePage"}/>*/}
-                    <Route path={"/"} component={HomePage} exact />
-                    <Route path={"/HomePage"} component={HomePage}/>
-                    <Route path={"/Other"} component={Other}/>
-                    <Route path={"/About"} component={About}/>
-                </Router>
+                <HomePage/>
             </div>
+            // <Router>
+            //     <Navigation/>
+            //     <Switch>
+            //         {/*<Redirect path={"/"} to={"/HomePage"}/>*/}
+            //         <Route path={"/"} component={HomePage} exact />
+            //         <Route path={"/HomePage"} component={HomePage}/>
+            //         <Route path={"/Other"} component={Other}/>
+            //         <Route path={"/About"} component={About}/>
+            //     </Switch>
+            // </Router>
         )
     }
 }
