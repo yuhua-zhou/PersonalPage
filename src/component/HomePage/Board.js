@@ -62,7 +62,7 @@ class Board extends React.Component{
                                       onClick={()=>this.setState({clicked:4,itemClass:[styles.item,styles.item,styles.item,styles.item,styles.itemSelect]})}>
                                     校园生活</span>
                                 <span className={styles.nothing}></span>
-                                <button title="transfer">转账</button>
+                                {/*<button title="transfer">转账</button>*/}
                             </div>
                             {/*显示每一个标签的东西，需要不断替换*/}
                             <Content clicked={this.state.clicked}/>

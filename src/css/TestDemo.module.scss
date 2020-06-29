@@ -1,0 +1,22 @@
+.div{
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 20px 20px 20px 500px;
+}
+
+@media screen and (max-width: 1000px){
+  .div{
+    background: red;
+    margin: 20px 20px 20px 200px;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .div{
+    background: yellow;
+    margin: 20px 20px 20px 100px;
+    border-radius: 50%;
+  }
+}

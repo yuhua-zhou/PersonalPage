@@ -20,7 +20,7 @@ module.exports = function override(config, env) {
     //配置别名，设置@指向src目录
     config.resolve.alias = {
         '@': resolve('src')
-    }
+    };
     //css模块化
     config = rewireCssModules(config, env);
 

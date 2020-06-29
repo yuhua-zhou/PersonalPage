@@ -34,7 +34,7 @@ class HonorGained extends React.Component{
         return(
             <div className={styles.container}>
                 <p className={styles.top}>
-                    在本科期间获得了一次国家奖学金、两次浙江省政府奖学金、两次浙江理工大学优秀生一等奖学金和两次浙江理工大学“三好学生”的荣誉称号。
+                    在本科期间获得了一次国家奖学金、两次浙江省政府奖学金、两次浙江理工大学优秀生一等奖学金和两次浙江理工大学“三好学生”等荣誉称号。
                     <ToDetailButton to="title-honor"/>
                 </p>
                 {/*获得荣誉*/}

@@ -10,14 +10,37 @@ function LikeBoard(){
     const [attention,setAttention] = useState(2762);
     const [follow, setFollow]=useState(1893);
 
+    // 变成有逗号的计数法
+    const toStatistic=(number)=>{
+
+        let temp = "";
+        let result = "";
+        let count = 1;
+        while(number){
+            let a= number % 10;
+            temp+=a.toString();
+            if(count % 3 ===0){
+                temp+=",";
+            }
+            count++;
+            number = Math.floor(number / 10);
+        }
+
+        //反转字符串
+        for(let i =temp.length-1;i>=0;i--){
+            result+=temp[i];
+        }
+
+        return result;
+    };
+
     return (
         <div className={styles.row} style={{position:'relative'}}>
-            <p onClick={()=>setLike(like+1)}>{like}<br/>Like</p>
-            <p onClick={()=>setAttention(attention+1)}>{attention}<br/>Attention</p>
-            <p onClick={()=>setFollow(follow+1)}>{follow}<br/>Follows</p>
+            <p onClick={()=>setLike(like+1)}>{toStatistic(like)}<br/>Like</p>
+            <p onClick={()=>setAttention(attention+1)}>{toStatistic(attention)}<br/>Attention</p>
+            <p onClick={()=>setFollow(follow+1)}>{toStatistic(follow)}<br/>Follows</p>
         </div>
     );
-
 
     // constructor(props){
     //     super(props);

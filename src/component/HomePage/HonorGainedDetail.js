@@ -82,7 +82,7 @@ class HonorGainedDetail extends React.Component{
                             {this.renderRewardImgs()}
                         </div>
                         {/*// <!-- Add Pagination -->*/}
-                        <div className="swiper-pagination"></div>
+                        <div className="swiper-pagination"/>
                     </div>
                 </div>
                 {/*这边写奖项名字*/}
@@ -90,6 +90,7 @@ class HonorGainedDetail extends React.Component{
                     <p>
                         本科期间，我在身体素质方面、思想道德方面以及实践创新方面较为突出，综合测评位于专业第一。
                         “一分耕耘，一分收获”，凭借着优异的综合素质，每年都获得了浙江省政府奖学金、校一等奖学金以及三好学生的荣誉称号。
+                        在本科毕业后还获得了浙江理工大学优秀毕业生和浙江省优秀毕业生的荣誉称号。
                     </p>
                     {/**/}
                     <div className={styles.bottom}>
